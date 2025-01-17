@@ -10,7 +10,6 @@ from sklearn.preprocessing import MinMaxScaler
 from keras.models import Sequential
 from keras.layers import LSTM, Dense, Dropout
 
-
 st.title('Image Caption Dashboard')
 
 image = ()
