@@ -1,8 +1,8 @@
-from keras.preprocessing.text import Tokenizer # type: ignore
-from keras.preprocessing.sequence import pad_sequences # type: ignore
-from keras.utils import pad_sequences # type: ignore
-from keras.applications.xception import Xception # type: ignore
-from keras.models import load_model # type: ignore
+from keras.preprocessing.text import Tokenizer
+from keras.preprocessing.sequence import pad_sequences 
+from keras.utils import pad_sequences 
+from keras.applications.xception import Xception 
+from keras.models import load_model 
 from pickle import load
 import numpy as np
 from PIL import Image
