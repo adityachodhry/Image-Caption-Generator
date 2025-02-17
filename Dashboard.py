@@ -1,14 +1,15 @@
 # GUI 
-
 import streamlit as st
 from PIL import Image
+import tensorflow as tf
 import pandas as pd
 import numpy as np
 import plotly.express as px
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
-from keras.models import Sequential
-from keras.layers import LSTM, Dense, Dropout
+from tensorflow.keras.models import Sequential # type: ignore
+from tensorflow.keras.layers import LSTM, Dense, Dropout # type: ignore
+
 
 st.title('Image Caption Dashboard')
 
@@ -27,9 +28,6 @@ if uploaded_file is not None:
     # Display the uploaded image
     image = Image.open(uploaded_file)
     st.image(image, caption='Uploaded Image.', use_column_width=True)
-
-    # You can perform further processing with the image or extract features as needed.
-    # For example, you might want to use a machine learning model to analyze the image.
 
     # If you want to extract features from the image, you can convert it to a NumPy array.
     image_array = np.array(image)
