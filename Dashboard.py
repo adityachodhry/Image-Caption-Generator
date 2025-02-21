@@ -7,8 +7,8 @@ import numpy as np
 import plotly.express as px
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
-from tensorflow.keras.models import Sequential # type: ignore
-from tensorflow.keras.layers import LSTM, Dense, Dropout # type: ignore
+from tensorflow.keras.models import Sequential 
+from tensorflow.keras.layers import LSTM, Dense, Dropout
 
 
 st.title('Image Caption Dashboard')
